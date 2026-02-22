@@ -58,7 +58,7 @@ lst.extend([8, 9])
 ---
 ## 3. Sets
 
-A **Set** is an unordered collection that is iterable, mutable, and contains **no duplicate elements**
+A **Set** is an unordered collection that is iterable, mutable, and contains **no duplicate elements.**
 
 ```python
 set1 = {"Avengers", "IronMan", "Hitman"}
@@ -86,13 +86,15 @@ An unordered, changeable, and indexed collection of **key-value pairs**.
 > ```
 
 > # Loop through KEYS
-> 
-> for x in my_dict:
-> 
-> print(x)
+> ```python
+> 	for x in my_dict:
+> 	print(x)
+> ```
+
 
 > # Loop through VALUES
-> 
+> ```
+> ```
 > for x in my_dict.values():
 > 
 > print(x)
