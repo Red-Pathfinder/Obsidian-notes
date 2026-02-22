@@ -1,4 +1,8 @@
+---
 
+# 🐍 Python Essentials for Data Work
+
+---
 ---
 # 🐍 Python Essentials for Data Work
 
@@ -58,12 +62,14 @@ print(lst[1:4])      # Slicing (index 1 to 3)
 
 ### Adding Elements
 
-> [!TIP] Append vs Extend
-
-- `.append()` → adds **one object**
-    
-- `.extend()` → adds multiple items (keeps list flat)
-    
+> [!TIP] Append vs Extend vs Insert
+> 
+> - `.append()` → adds **one object** at the end
+>     
+> - `.extend()` → adds multiple items (keeps list flat)
+>     
+> - `.insert(index, item)` → adds an item at a **specific position**
+>     
 
 ```python
 lst = [1, 2, 3]
@@ -73,6 +79,10 @@ lst.append([4, 5])
 lst = [1, 2, 3]
 lst.extend([4, 5])
 # Result: [1, 2, 3, 4, 5]
+
+lst = [1, 2, 3]
+lst.insert(1, 10)
+# Result: [1, 10, 2, 3]
 ```
 
 ---
