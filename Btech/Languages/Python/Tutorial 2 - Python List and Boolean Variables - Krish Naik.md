@@ -85,25 +85,28 @@ An unordered, changeable, and indexed collection of **key-value pairs**.
 > my_dict = {"Car1": "Audi", "Car2": "BMW"}
 > ```
 
-> # Loop through KEYS
-> ```python
-> 	for x in my_dict:
-> 	print(x)
-> ```
+# Dictionary Looping in Python
 
+## Loop through KEYS
 
-> # Loop through VALUES
-> ```
-> ```
-> for x in my_dict.values():
-> 
-> print(x)
+```python
+for x in my_dict:
+    print(x)
+```
 
-> # Loop through BOTH
-> 
-> for x in my_dict.items():
-> 
-> print(x)
+## Loop through VALUES
+
+```python
+for x in my_dict.values():
+    print(x)
+```
+
+## Loop through BOTH (key and value)
+
+```python
+for key, value in my_dict.items():
+    print(key, value)
+```
 
 ### Nested Dictionaries
 
