@@ -88,29 +88,21 @@ An unordered, changeable, and indexed collection of **key-value pairs**.
 # Dictionary Looping in Python
 
 ## Loop through KEYS
-
 ```python
 for x in my_dict:
     print(x)
 ```
-
 ## Loop through VALUES
-
 ```python
 for x in my_dict.values():
     print(x)
 ```
-
 ## Loop through BOTH (key and value)
-
 ```python
 for key, value in my_dict.items():
     print(key, value)
 ```
-
 ### Nested Dictionaries
-
-Python
 
 ```
 car_type = {
