@@ -55,16 +55,12 @@ lst = [1, 2, 3, 4, 5, 6]
 lst.extend([8, 9]) 
 # Result: [1, 2, 3, 4, 5, 6, 8, 9]
 ```
-
 ---
-
 ## 3. Sets
 
-A **Set** is an unordered collection that is iterable, mutable, and contains **no duplicate elements**.
+A **Set** is an unordered collection that is iterable, mutable, and contains **no duplicate elements**
 
-Python
-
-```
+```python
 set1 = {"Avengers", "IronMan", "Hitman"}
 set2 = {"Avengers", "IronMan", "Hitman", "Hulk2"}
 
