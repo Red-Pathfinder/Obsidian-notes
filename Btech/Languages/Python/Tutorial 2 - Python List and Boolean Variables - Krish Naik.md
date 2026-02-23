@@ -62,9 +62,7 @@ lst.extend([8, 9])
 
 A **Set** is an unordered collection that is iterable, mutable, and contains **no duplicate elements**.
 
-Python
-
-```
+```python
 set1 = {"Avengers", "IronMan", "Hitman"}
 set2 = {"Avengers", "IronMan", "Hitman", "Hulk2"}
 
@@ -134,14 +132,3 @@ print(my_tuple.index('Ankur')) # 1
 ```
 
 ---
-
-### Why this works in Obsidian:
-
-1. **Language Tagging:** I used ` ```python ` instead of just ` ``` `. This triggers Obsidian's internal Prism.js highlighter.
-    
-2. **Indentation:** I used 4 spaces for nested logic (like inside `for` loops).
-    
-3. **Callouts:** Used `> [!TIP]` syntax which Obsidian renders as beautiful colored blocks.
-    
-
-**Would you like me to convert any other specific code snippets or notebooks using this layout?**
