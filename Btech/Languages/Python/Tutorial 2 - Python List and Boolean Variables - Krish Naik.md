@@ -120,9 +120,7 @@ print(car_type['car1']['Mercedes']) # 1960
 
 Ordered sequences that are **immutable** (cannot be changed after creation).
 
-Python
-
-```
+```python
 my_tuple = ("Krish", "Ankur", "John")
 print(my_tuple.count('Krish')) # 1
 print(my_tuple.index('Ankur')) # 1
