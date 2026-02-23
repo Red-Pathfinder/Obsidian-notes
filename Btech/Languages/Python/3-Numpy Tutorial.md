@@ -1,13 +1,14 @@
 ````markdown
 ---
 tags: [python, numpy, data-science, ml-foundations]
-created: {{date}}
+created: 2026-02-24
 ---
 
 # 🧮 NumPy – Tutorial 3
-Links: [[Python]], [[Data Science]], [[Linear Algebra]]
+Links: [[Python]] | [[Data Science]] | [[Linear Algebra]] | [[Vectorization]] | [[Broadcasting]]
 
---- 
+---
+
 ## 📌 What is NumPy?
 
 **NumPy (Numerical Python)** is a library for fast numerical computation using multidimensional arrays.
@@ -28,19 +29,21 @@ import numpy as np
 
 ---
 
-# 📊 Creating Arrays
+## 📊 Creating Arrays
 
-## From List
+### From List
 
 ```python
 arr = np.array([1, 2, 3, 4])
 ```
 
-## 2D Array
+### 2D Array
 
 ```python
-arr2 = np.array([[1, 2, 3],
-                 [4, 5, 6]])
+arr2 = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
 ```
 
 ---
@@ -57,29 +60,32 @@ arr.dtype      # data type
 Example:
 
 ```python
-arr = np.array([[1,2,3],[4,5,6]])
+arr = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
 print(arr.shape)   # (2, 3)
 ```
 
 ---
 
-# 🔢 Special Arrays
+## 🔢 Special Arrays
 
 Links: [[Matrix Initialization]]
 
-## Zeros
+### Zeros
 
 ```python
 np.zeros((3, 3))
 ```
 
-## Ones
+### Ones
 
 ```python
 np.ones((2, 4))
 ```
 
-## Identity Matrix
+### Identity Matrix
 
 ```python
 np.eye(3)
@@ -114,7 +120,7 @@ $$
 
 ---
 
-# 📏 Reshaping Arrays
+## 📏 Reshaping Arrays
 
 Tags: #array-operations  
 Links: [[Matrix Operations]]
@@ -129,22 +135,22 @@ $$
 $$
 
 > [!WARNING]  
-> If element count changes → ValueError
+> If the number of elements changes → ValueError
 
 ---
 
-# 🔍 Indexing & Slicing
+## 🔍 Indexing & Slicing
 
 Links: [[Python Indexing]]
 
-## 1D
+### 1D
 
 ```python
 arr[2]
 arr[1:4]
 ```
 
-## 2D
+### 2D
 
 ```python
 arr2[0, 1]
@@ -153,11 +159,11 @@ arr2[1, :]   # row
 ```
 
 > [!TIP]  
-> `:` means select all elements.
+> `:` means select all elements along that axis.
 
 ---
 
-# ⚡ Vectorized Operations
+## ⚡ Vectorized Operations
 
 Tags: #vectorization  
 Links: [[Broadcasting]]
@@ -167,13 +173,13 @@ arr = np.array([1, 2, 3])
 arr * 2
 ```
 
-Result:
+Mathematically:
 
 $$  
 y_i = 2x_i  
 $$
 
-## Element-wise Operations
+### Element-wise Operations
 
 ```python
 a + b
@@ -183,21 +189,21 @@ a / b
 ```
 
 > [!NOTE]  
-> No loops required → faster computation.
+> Vectorization removes the need for loops and improves performance.
 
 ---
 
-# 📡 Broadcasting
+## 📡 Broadcasting
 
 Links: [[Vectorization]]
 
 Allows operations between arrays of different shapes.
 
-Example:
-
 ```python
-arr = np.array([[1, 2, 3],
-                [4, 5, 6]])
+arr = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
 
 arr + 10
 ```
@@ -207,11 +213,11 @@ $$
 $$
 
 > [!WARNING]  
-> Shapes must be compatible.
+> Shapes must be compatible according to broadcasting rules.
 
 ---
 
-# 📈 Statistical Functions
+## 📈 Statistical Functions
 
 Tags: #statistics
 
@@ -223,7 +229,7 @@ arr.max()
 arr.sum()
 ```
 
-Axis operations:
+Axis-wise operations:
 
 ```python
 arr.sum(axis=0)   # column sum
@@ -232,7 +238,7 @@ arr.sum(axis=1)   # row sum
 
 ---
 
-# 🔄 Copy vs View
+## 🔄 Copy vs View
 
 Links: [[Memory Management]]
 
@@ -242,7 +248,7 @@ b = a
 b[0] = 10
 ```
 
-Now `a` is also changed because both share memory.
+Both `a` and `b` change because they share memory.
 
 Proper copy:
 
@@ -251,20 +257,20 @@ b = a.copy()
 ```
 
 > [!IMPORTANT]  
-> Use `.copy()` to avoid unintended changes.
+> Use `.copy()` to avoid unintended modifications.
 
 ---
 
-# 🧠 NumPy Mindset
+## 🧠 NumPy Mindset
 
-Bad (loop):
+Loop (slow):
 
 ```python
 for i in range(len(arr)):
     arr[i] *= 2
 ```
 
-Good (vectorized):
+Vectorized (fast):
 
 ```python
 arr *= 2
@@ -275,29 +281,24 @@ arr *= 2
 
 ---
 
-# 🔗 Related Notes
+## 🔗 Related Notes
 
-- [[NumPy]]
-    
-- [[Vectorization]]
-    
-- [[Broadcasting]]
-    
-- [[Matrix Operations]]
-    
-- [[Linear Algebra]]
-    
-- [[Memory Management]]
-    
-- [[Python Performance]]
-    
+[[NumPy]]  
+[[Vectorization]]  
+[[Broadcasting]]  
+[[Matrix Operations]]  
+[[Linear Algebra]]  
+[[Memory Management]]  
+[[Python Performance]]
 
 ---
 
-# 🏷️ Tags
+## 🏷️ Graph Tags
 
 #numpy  
 #data-science  
 #ml-foundations  
 #array-operations  
-#vectorization
+#vectorization  
+#broadcasting  
+#statistics
