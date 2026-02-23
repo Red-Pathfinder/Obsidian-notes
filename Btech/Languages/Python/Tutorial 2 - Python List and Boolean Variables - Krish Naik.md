@@ -89,9 +89,10 @@ An unordered, changeable, and indexed collection of **key-value pairs**.
 
 > # Loop through KEYS
 > 
-> for x in my_dict:
-> 
-> print(x)
+> ```python
+> 	 for x in my_dict:
+> 		print(x)
+> ```
 
 > # Loop through VALUES
 > 
