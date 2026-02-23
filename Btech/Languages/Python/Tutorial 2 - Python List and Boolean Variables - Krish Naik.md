@@ -106,9 +106,7 @@ An unordered, changeable, and indexed collection of **key-value pairs**.
 ```
 ### Nested Dictionaries
 
-Python
-
-```
+```python
 car_type = {
     'car1': {'Mercedes': 1960}, 
     'car2': {'Audi': 1970}
