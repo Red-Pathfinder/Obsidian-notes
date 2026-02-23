@@ -81,9 +81,9 @@ An unordered, changeable, and indexed collection of **key-value pairs**.
 
 > [!IMPORTANT] Iteration Techniques
 > 
-> Python
+>
 > 
-> ```
+> ```python
 > my_dict = {"Car1": "Audi", "Car2": "BMW"}
 > ```
 
