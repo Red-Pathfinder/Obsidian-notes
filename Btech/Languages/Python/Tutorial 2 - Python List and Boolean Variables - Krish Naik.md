@@ -93,18 +93,16 @@ An unordered, changeable, and indexed collection of **key-value pairs**.
 	    print(x)
 ```
 > # Loop through VALUES
-
-	````python
-for x in my_dict.values():
-    print(x)
+```python
+	for x in my_dict.values():
+	    print(x)
 ```
 
 > # Loop through BOTH
-> 
-> for x in my_dict.items():
-> 
-> print(x)
-
+```python
+for x in my_dict.items():
+    print(x)
+```
 ### Nested Dictionaries
 
 Python
