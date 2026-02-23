@@ -100,8 +100,8 @@ An unordered, changeable, and indexed collection of **key-value pairs**.
 
 > # Loop through BOTH
 ```python
-for x in my_dict.items():
-    print(x)
+	for x in my_dict.items():
+	    print(x)
 ```
 ### Nested Dictionaries
 
