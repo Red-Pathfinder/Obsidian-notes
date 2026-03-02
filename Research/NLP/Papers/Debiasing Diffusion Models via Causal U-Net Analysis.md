@@ -8,7 +8,7 @@
 
 
 > [!bug] The Issue
-> Text-to-Image (T2I) models like Stable Diffusion have inherent demographic biases (e.g., prompting "CEO" consistently generates a specific demographic).
+> [[Text-to-Image (T2I)]] models like [[Stable Diffusion]] have inherent demographic biases (e.g., prompting "CEO" consistently generates a specific demographic).
 
 > [!fail] Prior Work's Flaw
 > Older methods treated this like a documentation error—they tried to fix it by tweaking the text encoder or wrapping the prompt in new instructions (prompt engineering).
