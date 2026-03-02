@@ -78,8 +78,8 @@ Once the biased neurons are isolated, they are updated using two competing [[los
 
 ## 5. Deployment Flexibility: Absolute vs. Relative Fairness
 
-* ⚖️ **[[Absolute Fairness]]:** Forcing an exact 50/50 split (e.g., 50% Male / 50% Female).
-* 🎛️ **[[Relative Fairness]]:** Adjusting the model to reflect a specific, custom demographic ratio (e.g., 80% elderly / 20% young). This is highly useful for tailoring AI to specific regional populations.
+*  **[[Absolute Fairness]]:** Forcing an exact 50/50 split (e.g., 50% Male / 50% Female).
+*  **[[Relative Fairness]]:** Adjusting the model to reflect a specific, custom demographic ratio (e.g., 80% elderly / 20% young). This is highly useful for tailoring AI to specific regional populations.
 
 <br>
 
