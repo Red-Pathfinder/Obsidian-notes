@@ -87,8 +87,6 @@ Once the biased neurons are isolated, they are updated using two competing [[los
 
 ## 6. Conceptual [[PyTorch]] Implementation
 
-*How this looks in code for a B.Tech mini-project:*
-
 ```python
 import torch
 
@@ -109,3 +107,4 @@ def total_loss(output, target_dist, original_features):
     L_dist = distribution_loss(output, target_dist) # Pushes to demographic target
     L_sem = semantic_loss(output, original_features) # Preserves 'doctor-ness'
     return L_dist + (lambda_weight * L_sem)
+```
