@@ -1,4 +1,6 @@
-**Tags:** #paper #diffusion-models #bias #fairness #AI #deep-learning #cv #causal-inference
+**Tags:** #paper #diffusion-models #bias #fairness #AI #deep-learning 
+
+#ComputerVision  #causal-inference
 **Paper Link/Code:** [github.com/FanQi-AI/Debias](https://github.com/FanQi-AI/Debias)
 
 ---
