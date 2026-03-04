@@ -58,6 +58,7 @@ print(lst[1:4])    # Slicing: ['chemistry', 100, 200]
 ## 3. Sets
 
 **Properties:** #unordered, #iterable, no duplicate elements.
+- Uses Hash Maps \rightarrow
 ```python
 set1 = {"Avengers", "IronMan", "Hitman"}
 set2 = {"Avengers", "IronMan", "Hitman", "Hulk2"}
