@@ -1,67 +1,63 @@
 
----
-# 🐍 Python Data Structures & Boolean Logic
+**Tags:** #python #programming #data-structures
+
+**Related Notes:** [[Python-Functions]], [[Time-Complexity-Big-O]], [[Object-Oriented-Programming]]
 
 ---
+
 ## 1. Boolean Variables & Logical Operators
 
-Boolean values represent truth values using `True` and `False`. In numeric contexts, they behave like `1` and `0`.
+Boolean values represent truth values using `True` and `False`. In numeric contexts, they behave like $1$ and $0$.
 
-> [!TIP] String Boolean Methods
-> 
-> Use these to validate data before processing:
-> 
-> - `.isalnum()`: True if all characters are alphanumeric.
->     
-> - `.isalpha()`: True if all characters are alphabetic.
->     
-> - `.isdigit()`: True if string contains only digits.
->     
-> - `.istitle()`: True if string follows title case (Initial letter upper case).
->     
+### String Boolean Methods
+
+Use these to validate data before processing:
+
+- `.isalnum()`: `True` if all characters are alphanumeric.
+    
+- `.isalpha()`: `True` if all characters are alphabetic.
+    
+- `.isdigit()`: `True` if string contains only digits.
+    
+- `.istitle()`: `True` if string follows title case.
 
 ```python
 my_str = 'Krish123'
 print(my_str.isalnum())       # True
 print(my_str.startswith('K'))  # True
 ```
+
 ---
+
 ## 2. Lists
 
-A **List** is a mutable (can be changed), ordered sequence of elements defined by square brackets `[]`.
+**Properties:** #mutable, ordered sequence. Defined by `[]`.
 
-#### Basic Operations :
+### Basic Operations
+
+> [!WARNING]
+> 
+> In your example `print(lst[6])`, Python will throw an `IndexError`. Since the length is 6, the highest index is **5**.
+
 ```python
 lst = ['Mathematics', 'chemistry', 100, 200, 300, 204]
-print(len(lst))   # Returns 6
-print(lst[6])     # Access element by index
-print(lst[1:6])   # Slicing from index 1 to 5
+print(len(lst))    # Returns 6
+print(lst[5])      # Access last element (204)
+print(lst[1:4])    # Slicing: ['chemistry', 100, 200]
 ```
-### Adding and Merging
 
-> [!TIP] Append vs. Extend
-> 
-> - Use `.append()` to add a **single item** (adds a list as one object).
->     
-> - Use `.extend()` to merge multiple items while **keeping the list flat**.
->     
+### Adding and Merging: Append vs. Extend
 
-```python
-lst = [1, 2, 3]
-lst.append([4, 5]) 
-# Result: [1, 2, 3, [4, 5]]
+- **`.append()`**: Adds the input as **one single object** (creates a nested list if input is a list).
+    
+- **`.extend()`**: Unpacks the input and adds elements individually (**flattens** the result).
 
-lst = [1, 2, 3, 4, 5, 6]
-lst.extend([8, 9]) 
-# Result: [1, 2, 3, 4, 5, 6, 8, 9]
-```
 
 ---
 
 ## 3. Sets
 
-A **Set** is an unordered collection that is iterable, mutable, and contains **no duplicate elements**.
-
+**Properties:** #unordered, #iterable, no duplicate elements.
 ```python
 set1 = {"Avengers", "IronMan", "Hitman"}
 set2 = {"Avengers", "IronMan", "Hitman", "Hulk2"}
@@ -77,33 +73,26 @@ set2.difference_update(set1)
 
 ## 4. Dictionaries
 
-An unordered, changeable, and indexed collection of **key-value pairs**.
+An unordered, changeable, and indexed collection of **Key-Value** pairs. Often compared to [[JSON]] format.
 
-> [!IMPORTANT] Iteration Techniques
-> 
-> ```python
-> my_dict = {
-> 			"Car1": "Audi", 
-> 			"Car2": "BMW"
-> 			}
-> ```
+### Iteration Techniques
 
-> # Loop through KEYS
 ```python
-	for x in my_dict:
-	    print(x)
-```
-> # Loop through VALUES
-```python
-	for x in my_dict.values():
-	    print(x)
+my_dict = {"Car1": "Audi", "Car2": "BMW"}
+
+# Loop through KEYS
+for x in my_dict:
+    print(x)
+
+# Loop through VALUES
+for x in my_dict.values():
+    print(x)
+
+# Loop through BOTH (Items)
+for k, v in my_dict.items():
+    print(f"Key: {k}, Value: {v}")
 ```
 
-> # Loop through BOTH
-```python
-	for x in my_dict.items():
-	    print(x)
-```
 ### Nested Dictionaries
 
 ```python
@@ -118,7 +107,7 @@ print(car_type['car1']['Mercedes']) # 1960
 
 ## 5. Tuples
 
-Ordered sequences that are **immutable** (cannot be changed after creation).
+**Properties:** #immutable (cannot be changed after creation). Use these for data that should remain a "constant" throughout your program.
 
 ```python
 my_tuple = ("Krish", "Ankur", "John")
