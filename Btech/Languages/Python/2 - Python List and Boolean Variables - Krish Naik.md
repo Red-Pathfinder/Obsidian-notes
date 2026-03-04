@@ -80,6 +80,7 @@ set2.difference_update(set1)
 ## 4. Dictionaries
 
 An unordered, changeable, and indexed collection of **Key-Value** pairs. Often compared to [[JSON]] format.
+
 - Indexing possible but with a catch
 		$\rightarrow$ We do not pass 0, 1, 2, 3,... but instead we pass **key names**.
 ### Iteration Techniques
