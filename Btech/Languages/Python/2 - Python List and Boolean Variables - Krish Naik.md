@@ -65,9 +65,11 @@ print(lst[1:4])    # Slicing: ['chemistry', 100, 200]
 set1 = {"Avengers", "IronMan", "Hitman"}
 set2 = {"Avengers", "IronMan", "Hitman", "Hulk2"}
 
-set2.intersection(set1) # Finds common tuples but doesn't change the original set
 # Intersection: Keeps only common items
-set2.intersection_update(set1) 
+set2.intersection_update(set1) # changes the original set1
+
+# Finds common tuples but doesn't change the original set1
+set2.intersection(set1) 
 
 # Difference: Removes items found in the other set
 set2.difference_update(set1) 
