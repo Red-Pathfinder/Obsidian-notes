@@ -31,6 +31,7 @@ arr2 = np.array([
     [4, 5, 6]  
 ])
 ```
+arr.shape $\rightarrow$ 
 ##  Special Arrays
 
 np.zeros((3, 3))  
