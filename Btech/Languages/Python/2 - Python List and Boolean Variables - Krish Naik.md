@@ -120,6 +120,7 @@ print(car_type['car1']['Mercedes']) # 1960
 ## 5. Tuples
 
 **Properties:** #immutable (cannot be changed after creation). Use these for data that should remain a "constant" throughout your program.
+- The whole tuple can be changed but not its individual elements.
 
 ```python
 my_tuple = ("Krish", "Ankur", "John")
