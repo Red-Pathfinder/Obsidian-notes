@@ -17,19 +17,20 @@ Links: [[Python]] | [[Data Science]] | [[Linear Algebra]] | [[Vectorization]] | 
 import numpy as np
 ```
 
-##  Creating Arrays
+## Creating Arrays
+- **Array** is a data structure that stores values of same data type.
 
-### From List
-
+- ### From List
+```python
 arr = np.array([1, 2, 3, 4])
-
-### 2D Array
-
+```
+- ### 2D Array
+```python
 arr2 = np.array([  
     [1, 2, 3],  
     [4, 5, 6]  
 ])
-
+```
 ##  Special Arrays
 
 np.zeros((3, 3))  
