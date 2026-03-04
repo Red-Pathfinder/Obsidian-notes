@@ -58,11 +58,14 @@ print(lst[1:4])    # Slicing: ['chemistry', 100, 200]
 ## 3. Sets
 
 **Properties:** #unordered, #iterable, no duplicate elements.
-- Uses Hash Maps \rightarrow
+- Uses Hash Maps $\rightarrow$ Faster 
+- Doesn't support Indexing.
+
 ```python
 set1 = {"Avengers", "IronMan", "Hitman"}
 set2 = {"Avengers", "IronMan", "Hitman", "Hulk2"}
 
+set2.intersection(set1) # Finds common tuples but doesn't change the original set
 # Intersection: Keeps only common items
 set2.intersection_update(set1) 
 
