@@ -1,12 +1,7 @@
 ---  
-tags: [python, numpy, data-science, ml-foundations]  
-created: 2026-02-24  
-
----
-# 🧮 NumPy – Tutorial 3  
 Links: [[Python]] | [[Data Science]] | [[Linear Algebra]] | [[Vectorization]] | [[Broadcasting]]  
   
-## 📌 What is NumPy?  
+##  What is NumPy?  
   
 **NumPy (Numerical Python)** is a library for fast numerical computation using multidimensional arrays.  
   
@@ -16,13 +11,13 @@ Links: [[Python]] | [[Data Science]] | [[Linear Algebra]] | [[Vectorization]] | 
 > - Vectorized operations  
 > - Implemented in C  
   
-## ⚙️ Import  
+##  Import  
   
 ```python  
 import numpy as np
 ```
 
-## 📊 Creating Arrays
+##  Creating Arrays
 
 ### From List
 
@@ -35,7 +30,7 @@ arr2 = np.array([
     [4, 5, 6]  
 ])
 
-## 🔢 Special Arrays
+##  Special Arrays
 
 np.zeros((3, 3))  
 np.ones((2, 4))  
