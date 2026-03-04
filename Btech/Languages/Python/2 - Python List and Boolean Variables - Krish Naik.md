@@ -87,29 +87,23 @@ An unordered, changeable, and indexed collection of **Key-Value** pairs. Often c
 ### Iteration Techniques
 
 ```python
-car1 = {"BMW": 1987}
+my_dict = {
+			"Car1": "Audi", 
+			"Car2": "BMW"
+			}
 
-car2 = {"Mercedes": 1234}
+# Loop through KEYS
+for x in my_dict:
+    print(x)
 
-car3 = {"Audi": 4756}
+# Loop through VALUES
+for x in my_dict.values():
+    print(x)
 
-  
-
-car_nested = {
-
-    "model_1": car1,
-
-    "model_2": car3,
-
-    "model_3": car2
-
-}
-
-print(type(car_nested))
-
-print(car_nested)
+# Loop through BOTH (Items)
+for k, v in my_dict.items():
+    print(f"Key: {k}, Value: {v}")
 ```
-
 
 ### Nested Dictionaries
 
