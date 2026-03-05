@@ -31,7 +31,8 @@ arr2 = np.array([
     [4, 5, 6]  
 ])
 ```
-arr.shape $\rightarrow$ 
+##### arr.shape:
+returns a **tuple of integers** that describes the number of elements along each dimension (axis) of the array
 ##  Special Arrays
 
 np.zeros((3, 3))  
