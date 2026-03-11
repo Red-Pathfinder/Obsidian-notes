@@ -65,3 +65,5 @@ gemini 2.5 flash per 100 images generated  = $3.9
 - pair based
 - what about  mitigation techniques?
 - Do we see the drift visually or we calculate it mathematically
+- do we tell u the exact prices for models that are reasonable?
+- is profession 
