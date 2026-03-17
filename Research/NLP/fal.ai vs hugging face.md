@@ -4,3 +4,12 @@
 | **Cost (1,000 Pairs)** | **Lowest.** ~$20–$30 for 200–300 Colab compute units. Models like Flux.1 [dev] are free to run once you have the GPU.                             | **Higher.** ~$50 for Flux.1 [dev] ($0.025/image). Nano Banana Pro is even more expensive ($0.15/image).                                                |
 | **Model Access**       | **Limited to Open-Weights.** You can run Flux, SDXL, and SD 3.5. You cannot run proprietary models like Gemini or DALL-E here.                    | **All-in-One.** Access to Flux, SDXL, and proprietary models like Nano Banana in one interface.                                                        |
 | **Speed/Convenience**  | **Slower.** Requires environment setup, model downloads (~20GB), and managing Colab timeouts.                                                     | **Instant.** No setup. Just send an API request and get a URL back.                                                                                    |
+## *Model Comparision*
+
+|**Model**|**Architecture**|**Best Use Case**|**Cost (2,000 Images)**|
+|---|---|---|---|
+|**FLUX.1 [dev]**|DiT (Transformer)|Primary Causal Audit|**~$25** (Colab Units)|
+|**SDXL 1.0**|UNet|Legacy Baseline|**~$10** (Colab Units)|
+|**DeepFloyd IF**|Pixel-Diffusion|Extreme Variance Check|**Free** (on Colab)|
+|**SD 3.5 Large**|MM-DiT|Modern Comparison|**Free** (on Colab)|
+|**Nano Banana**|Proprietary|Corporate Audit|**~$80** (fal.ai API)|
