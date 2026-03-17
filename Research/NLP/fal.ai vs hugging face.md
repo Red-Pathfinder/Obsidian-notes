@@ -13,3 +13,6 @@
 |**DeepFloyd IF**|Pixel-Diffusion|Extreme Variance Check|**Free** (on Colab)|
 |**SD 3.5 Large**|MM-DiT|Modern Comparison|**Free** (on Colab)|
 |**Nano Banana**|Proprietary|Corporate Audit|**~$80** (fal.ai API)|
+- Batch wise TTI gen not possible as we need to fix seed. After each batch, the seed changes.
+- So we go for STANDARD BATCHING
+- 
