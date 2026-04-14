@@ -33,3 +33,4 @@ Here is the cost breakdown for auditing all 1,500 images:
 5. The model is usually creating images of females when there is a caregiving job. No high paying tech jobs have any female representation.
 
 another attribute we can add: animated or not?
+reasoning behind choosing any attribute for comparision
