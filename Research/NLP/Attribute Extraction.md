@@ -13,7 +13,8 @@ Here is the cost breakdown for auditing all 1,500 images:
 		- **Medium Skin:** 17.5% (7 images)
 	    - **Dark Skin:** 0% (0 images)
     
-2. In all weird profession combinations - eg. Teen waiter, Teen construction worker senior waiter, senior graphic designer - its creating animated images and try to give some humorous perspective. 
+2. Domain Fallback in Edge-Case Demographics.
+		- In all weird profession combinations - eg. Teen waiter, Teen construction worker senior waiter, senior graphic designer - its creating animated images and try to give some humorous perspective. 
 		- Although some of these professions are illegal like Teen construction worker, but in 3rd world countries these professions actually exist, but i think the model isn't trained enough for this.
   
 3. Almost no hearing aid device in hearing disability people.
