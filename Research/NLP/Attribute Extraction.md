@@ -6,3 +6,7 @@ Here is the cost breakdown for auditing all 1,500 images:
 - Output: $10.00 per 1M tokens
 - Cost per image: ~$0.003
 - **Total for 1,500 images: ~$4.50 to $5.50 (approx. ₹380 - ₹460)**
+  
+Manual Observation:
+- No black, brown, asian representation
+- In all weird profession combinations - eg. Child waiter, senior waiter, senior graphic designer - its creating animated images and try to give some humorous perspective. 
