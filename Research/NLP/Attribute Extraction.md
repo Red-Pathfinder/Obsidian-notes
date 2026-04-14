@@ -29,3 +29,5 @@ Here is the cost breakdown for auditing all 1,500 images:
 		    - Conditioned Images:
 				    - 43.7% - Workplace.
 					- 18.7% - Domestic
+					
+5. The model is usually creating images of females when there is a caregiving job. No high paying tech jobs have any female representation.
