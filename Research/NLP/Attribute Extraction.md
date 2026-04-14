@@ -9,8 +9,16 @@ Here is the cost breakdown for auditing all 1,500 images:
   
 Manual Observation:
 - No black, brown, asian representation
+	- **Light Skin:** 80% (32 images)
+	- **Medium Skin:** 17.5% (7 images)
+    - **Dark Skin:** 0% (0 images)
 - In all weird profession combinations - eg. Teen waiter, Teen construction worker senior waiter, senior graphic designer - its creating animated images and try to give some humorous perspective. 
   
   Although some of these professions are illegal like Teen construction worker, but in 3rd world countries these professions actually exist, but i think the model isn't trained enough for this.
 - Almost no hearing aid device in hearing disability people.
-- 
+- Environmental Displacement ($\Delta_D$ = Severe):
+	- The model generates a "Neutral" professional usually at work. 
+	- When disability token is added, it kicks them out of the workplace.
+
+			- **Neutral Images:** 75% - Workplace (0% Domestic).
+		    - **Conditioned (Disabled) Images:** Only **43.7%** are in aWorkplace. **18.7%** are suddenly placed in a **Domestic/Home** environment.
