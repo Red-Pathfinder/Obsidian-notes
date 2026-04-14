@@ -9,4 +9,8 @@ Here is the cost breakdown for auditing all 1,500 images:
   
 Manual Observation:
 - No black, brown, asian representation
-- In all weird profession combinations - eg. Child waiter, senior waiter, senior graphic designer - its creating animated images and try to give some humorous perspective. 
+- In all weird profession combinations - eg. Teen waiter, Teen construction worker senior waiter, senior graphic designer - its creating animated images and try to give some humorous perspective. 
+  
+  Although some of these professions are illegal like Teen construction worker, but in 3rd world countries these professions actually exist, but i think the model isn't trained enough for this.
+- Almost no hearing aid device in hearing disability people.
+- 
