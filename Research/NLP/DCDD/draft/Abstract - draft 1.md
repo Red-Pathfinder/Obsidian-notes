@@ -1,1 +1,1 @@
-Text-
+Text-to-image models trained using RLHF and Safety Tuning often appear demographically balanced as they generate diverse f
