@@ -1,1 +1,1 @@
-Text-to-image models trained using RLHF and Safety Tuning often appear demographically balanced as they generate diverse faces, distribute representations across groups, and avoid common stereotypes. We argue that these surface compliances 
+Text-to-image (T2I) models aligned via RLHF and Prompt Tuning often appear demographically diverse faces, distribute representations across groups, and avoid common stereotypes. We argue that these surface compliances 
