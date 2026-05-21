@@ -1,1 +1,1 @@
-The table illustrates the total amount spent by the US to import fish in 1988, 1992, and 2000, while the pie charts show the proportion of fish ==imported== (brought in) from China, Canada, and other countries in the respective years.
+The table illustrates the total amount spent by the US==, in billions of dollars,== on imported fish in 1988, 1992, and 2000, while the ==three== pie charts show the proportion of fish ==imported== (brought in) from China, Canada, and other countries ==in the respective years.==
