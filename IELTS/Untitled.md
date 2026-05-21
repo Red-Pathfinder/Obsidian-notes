@@ -1,1 +1,1 @@
-The table illustrates the total 
+The table illustrates the total amount spent by the US to import fish in 1988, 1992, and 2000 while the pie charts show the proportion of imported fish from 
