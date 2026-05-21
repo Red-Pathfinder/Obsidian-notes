@@ -269,9 +269,9 @@ Do NOT rely on Claude or Gemini for novelty claims. Verify using:
 
 ### May 21, 2026
 
-- [x] Problem statement finalized
-- [x] Methodology framework designed
-- [x] Supervisor meeting prep completed (Dr. Sethi, NIT Patna)
+- [ ] Problem statement finalized
+- [ ] Methodology framework designed
+- [ ] Supervisor meeting prep completed (Dr. Sethi, NIT Patna)
 - [ ] Literature verification (pending — do before meeting)
 - [ ] Pre-pilot 20-image test (first task after June 10)
 - [ ] Image selection rubric formally written
