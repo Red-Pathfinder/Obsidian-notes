@@ -114,3 +114,15 @@
 
 ---
 *Generated May 2026 for European Admissions Strategy & AI Context Setting.*
+
+
+**Updated university shortlist — built for your specific profile**
+
+|University|Programme|Why it fits you|City cost|Funding ecosystem|PhD pathway|
+|---|---|---|---|---|---|
+|**University of Freiburg**|M.Sc. Computer Science (Autonomous Systems track)|Burgard/Valada robotics lab, Black Forest lifestyle, strong autonomous systems|€900/month|DFG, EU robotics grants|Excellent — direct lab to PhD|
+|**FAU Erlangen-Nürnberg**|M.Sc. Medical Engineering / AI in Medicine|Siemens Healthineers on doorstep, medical CV directly funded, Werkstudent pipeline|€800/month|Siemens, BMBF medical AI|Strong industry-to-academia PhD|
+|**University of Würzburg**|M.Sc. Artificial Intelligence|Pure AI degree, ECTS-flexible, very affordable, smaller cohort = more professor access|€750/month|Regional + DFG|Solid, quieter path|
+|**University of Bonn**|M.Sc. Computer Science (CV/Remote Sensing focus)|Phenomenal agricultural AI and satellite imaging group, underrated globally, excellent for your env/agri interest|€800/month|Helmholtz, agricultural research grants|Very strong for env/agri PhD|
+|**TU Munich**|M.Sc. Informatics (Visual Computing)|Opportunity density unmatched, but Munich costs €1,300+/month|€1,300/month|Enormous — Cyber Valley adjacent|Excellent but expensive|
+|**University of Stuttgart**|M.Sc. Computer Science|Cyber Valley ecosystem, Bosch/Mercedes research, strong robotics|€950/month|Bosch, Fraunhofer, Cyber Valley|Strong industry PhD pipeline|
