@@ -36,15 +36,12 @@ working on same internship)
 
 == CONSTRAINTS FOR NIT PATNA PAPER ==
 - Budget: MAX ₹5,000 total (save ₹2,000 for Colab Pro)
-- GPU: None until ~June 20 (MacBook Air M5 32GB arrives)
+- GPU: Cloud like google collab or cloud GPU until ~June 20 (MacBook Air M5 24GB arrives)
 - After June 20: Apple M5 unified memory, MPS backend
   — good for inference, NOT for training
-- Dataset: Max ~1,000 images
-- No IRB clearance for new human subjects
-- Only open-source datasets
 - Two researchers (me + Ishuvi)
-- No paid APIs beyond minimal OpenAI/Gemini free tier
-- Must be completable as PILOT STUDY in 8 weeks
+- No extremely expensive APIs
+- Must be completable as PILOT STUDY/ journal/ report/ smaller paper in 8 weeks
 
 == DOMAIN KNOWLEDGE / SKILLS WE HAVE ==
 - Demographic bias in generative models (DCDD)
