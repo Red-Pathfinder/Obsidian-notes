@@ -8,7 +8,7 @@
 
 ---
 
-## 🔖 How To Use This File
+## How To Use This File
 
 > Read this section first every time you return to this project after a gap.
 
