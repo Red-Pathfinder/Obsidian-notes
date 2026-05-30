@@ -5,7 +5,7 @@
 
 ---
 
-## 1. Who We Are & Constraintss4
+## 1. Who We Are & Constraints
 
 |Parameter|Detail|
 |---|---|
