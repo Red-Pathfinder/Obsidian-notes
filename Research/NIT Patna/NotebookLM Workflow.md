@@ -112,13 +112,35 @@ However, several papers do use older VLMs (such as BLIP, BLIP-2, and CLIP) for a
 
 > "What methodological choices did papers make when comparing bias across multiple T2I models — specifically around sample size, prompt standardization, and statistical tests? What sample sizes were considered sufficient for Chi-Square or similar tests?"
 
-Ans - 
+Ans - When comparing bias across multiple Text-to-Image (T2I) models, researchers made specific methodological choices to ensure that their comparisons were reliable, objective, and accurately reflected the models' intrinsic behaviors.
+
+**Prompt Standardization** To ensure that variations in the generated images were caused by the models themselves rather than inconsistencies in the text inputs, researchers relied on highly structured, unified prompt grammars:
+
+- **Controlling Scene and Style:** Vandewiele et al. intentionally avoided simple role-only prompts (like "a surgeon"), which frequently cause models to generate ambiguous group scenes. Instead, they utilized a strict grammar template: `<image qualifier>, a <portrait qualifier> portrait of a <hospital role>`. They also forced all models to adopt the same photorealistic style by prepending a standardized image qualifier ("high quality, detailed and ultra realistic photography, 4K, HDR").
+- **Aligning Contexts:** Luccioni et al. used a standardized prefix ("Photo portrait of a [X] [Y]") for all professions. When testing specific identity markers (gender and ethnicity), they explicitly added the suffix "at work" to the prompt so that the resulting backgrounds visually aligned with the workplace settings generated for the profession prompts.
+- **Interchangeable Templates:** Cho et al. evaluated bias across models by generating combinations using the strict template `"[Gender] who works as a/an [Profession]"`.
+
+**Sample Size** Across the studies, generating **100 images per specific prompt configuration** emerged as a standard methodological choice for establishing sufficient analytical volume:
+
+- Vandewiele et al. generated 100 images for each combination of role, qualifier, and model, resulting in a robust dataset of 15,000 images.
+- Warren et al. generated 100 images for each of their 40 moral characteristic prompts, producing 4,000 total images.
+- Bianchi et al. similarly generated 100 images per descriptor or occupation when testing Stable Diffusion.
+- For methodologies that relied on a massive variety of prompt combinations rather than deep variations of a single prompt, smaller per-prompt samples were used. For example, Jha et al. generated 15 images per identity group, and Cho et al. generated 9 images per prompt across 252 diagnostic combinations.
+
+**Statistical Tests and Chi-Square Sufficiency** The provided sources **do not contain any mentions of Chi-Square tests**, nor do they document what sample sizes would be considered sufficient for them. However, the sources do outline the sample sizes used for other specific statistical tests to compare bias:
+
+- **Single-Tailed T-Tests:** Warren et al. used a single-tailed t-test to calculate the statistical significance (p-values) of weight differences between images generated from paired positive and negative prompts. They considered their sample size of **100+ images per prompt pair** sufficient to establish a 95% confidence interval (p < 0.05), allowing them to conclude that 16 out of 20 observed weight differences were statistically significant.
+- **Bootstrap Estimators:** Luccioni et al. provided 95% confidence intervals using a bootstrap estimator to assess the statistical reliability of their cluster assignments when comparing the gender and ethnicity distributions of the models' outputs against real-world U.S. Bureau of Labor Statistics data.
 
 **Q4 (Moral probing specifically):**
 
 > "Which papers use morally-valenced or sentiment-polarized prompts to probe T2I models for bias, rather than explicit demographic descriptors? What theoretical justification do they give for this indirect probing approach?"
 
-Ans - 
+Ans - **Warren et al.** and **Bianchi et al.** both utilize prompts based on traits, sentiments, or moral valence rather than explicit demographic labels to uncover deeply ingrained biases in T2I models.
+
+**Warren et al.** specifically use **morally-valenced prompt pairs** (such as lazy/diligent, pure/impure, and gluttonous/moderate) to investigate weight bias, generating images based strictly on these positive and negative character traits rather than specifying body size. They theoretically justify this indirect probing by arguing that **Western society inherently projects morality onto body weight**. Grounded in sociology and critical fat studies, they explain that Western culture falsely equates thinness with purity, success, and self-discipline, while denigrating fatness as immoral, lazy, or deviant. Because this moralization is used to rationalize the systemic oppression of fat people, the authors argue that it is critical to probe models using morally valenced language to reveal whether AI systems are silently reproducing these harmful, culturally held associations.
+
+**Bianchi et al.** similarly use socially-loaded and sentiment-polarized descriptors (such as "attractive," "poor," "thug," or "terrorist") to test whether models generate harmful stereotypes **without the user ever mentioning race, gender, ethnicity, or nationality**. They justify this approach to explicitly dismantle the ideology of "colorblindness" — the false belief that simply avoiding demographic language in prompts will prevent models from generating biased outputs. By using indirect descriptors, they demonstrate that T2I models inherently entangle seemingly neutral traits with historically marginalized demographic groups, such as incorrectly associating "thug" or "poor person" with Black features, "terrorist" with Middle-Eastern men, and "attractive" strictly with a "White ideal".
 
 **Q5 (Statistical methods):**
 
