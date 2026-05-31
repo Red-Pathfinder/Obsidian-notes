@@ -178,6 +178,8 @@ Here is a breakdown of the specific tests, metrics, and thresholds used in the s
 
 > "Is there any paper in this notebook that specifically studies age bias or ageism in text-to-image models using moral or sentiment-based prompting? If not, what do the papers collectively suggest about age as an understudied dimension?"
 
+Ans  - 
+
 **Q2 (Weight bias gap):**
 
 > "Beyond Warren et al., do any papers in this notebook study body weight or body size bias in T2I models specifically? What do they collectively say about the state of body diversity representation in generative AI?"
