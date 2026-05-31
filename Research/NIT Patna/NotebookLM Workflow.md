@@ -89,17 +89,42 @@ To bypass the bottlenecks and label-assignment issues of manual annotation, thre
 
 > "Which papers in this notebook use Vision-Language Models (like GPT-4V, LLaVA, or GPT-4o) to annotate or classify generated images? What prompting strategies did they use, and what were the known failure modes or hallucination risks they identified?"
 
+Ans - None of the papers in the provided sources use advanced Vision-Language Models (VLMs) like GPT-4V, LLaVA, or GPT-4o for annotating or classifying generated images. In fact, some papers intentionally avoid automated annotation altogether; for example, both Vandewiele et al. and Warren et al. rely strictly on manual human evaluation to classify gender and weight, respectively, to ensure accurate identification of visual traits without relying on opaque tools.
+
+However, several papers do use older VLMs (such as BLIP, BLIP-2, and CLIP) for automated annotation. Here are the prompting strategies they utilized and the failure modes they identified:
+
+**1. Cho et al. (DALL-EVAL) - Using BLIP-2**
+
+- **Prompting Strategy:** To detect gender, the authors provided BLIP-2 with generated images and asked the visual question, _"the person looks like a male or a female?"_. To detect specific attributes (like clothing), they used the prompt, _"Is the person wearing A?"_ (e.g., "a suit" or "jeans") and checked if the model responded with "yes".
+- **Failure Modes & Model Comparison:** The authors explicitly tested CLIP (ViT/B-32) for these same tasks and found it to be highly failure-prone. For instance, on a benchmark gender dataset, CLIP achieved only 66% accuracy compared to BLIP-2's 82%, and CLIP also exhibited a much higher baseline gender bias. When detecting attributes, CLIP performed significantly worse against expert human annotation compared to BLIP-2.
+
+**2. Luccioni et al. (Stable Bias) - Using BLIP VQA and ViT GPT-2**
+
+- **Prompting Strategy:** The authors used a Visual Question Answering model (BLIP VQA) to extract short text representations of generated figures by asking, _"What word best describes this person’s appearance?"_. They also used an image captioning model (ViT GPT-2) to generate multi-word, open-ended captions for the images without constraining the models to pre-defined labels.
+- **Failure Modes Identified:** The authors stress a major limitation: the VQA and image captioning models inherently possess their own confounding factors and social biases inherited from their training data. Because the models themselves are biased (such as associating women with shopping), their text outputs cannot be interpreted as an objective "ground truth" of what is in the image.
+
+**3. Jha et al. (ViSAGe) - Using CLIP + BART**
+
+- **Prompting Strategy:** The authors automatically generated captions for generated images using CLIP embeddings combined with a BART model, producing the top 50 descriptive captions for each image. They then searched these captions for known visual stereotypes.
+- **Hallucination Risks Identified:** A significant failure mode identified in this automated text-generation approach was the hallucination of cultural stereotypes. The authors noted that the captioning model sometimes identified stereotypical attributes—such as a "cow" or an "elephant" in images generated for "Indian" identities—even when those objects were not actually depicted in the generated images. They concluded that this hallucination is likely due to pre-existing errors and biases embedded within the captioning model itself.
+
 **Q3 (Multi-model comparison):**
 
 > "What methodological choices did papers make when comparing bias across multiple T2I models — specifically around sample size, prompt standardization, and statistical tests? What sample sizes were considered sufficient for Chi-Square or similar tests?"
+
+Ans - 
 
 **Q4 (Moral probing specifically):**
 
 > "Which papers use morally-valenced or sentiment-polarized prompts to probe T2I models for bias, rather than explicit demographic descriptors? What theoretical justification do they give for this indirect probing approach?"
 
+Ans - 
+
 **Q5 (Statistical methods):**
 
 > "What statistical tests are used across these papers to measure bias in generated image distributions — Chi-Square, Cramér's V, t-tests, effect sizes? What thresholds or corrections (like Benjamini-Hochberg FDR) are applied for multiple comparisons?"
+
+Ans - 
 
 ---
 
