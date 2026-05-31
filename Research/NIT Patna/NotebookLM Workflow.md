@@ -146,7 +146,29 @@ Ans - **Warren et al.** and **Bianchi et al.** both utilize prompts based on tra
 
 > "What statistical tests are used across these papers to measure bias in generated image distributions — Chi-Square, Cramér's V, t-tests, effect sizes? What thresholds or corrections (like Benjamini-Hochberg FDR) are applied for multiple comparisons?"
 
-Ans - 
+Ans - Across the provided papers, formal statistical hypothesis testing is surprisingly rare. Most papers rely on descriptive statistics, custom mathematical ratios, or spatial distance metrics to quantify bias rather than traditional statistical tests.
+
+Here is a breakdown of the specific tests, metrics, and thresholds used in the sources:
+
+**T-Tests and P-Value Thresholds**
+
+- **Warren et al.** is the only paper that explicitly employs t-tests. They use a **single-tailed t-test** to determine if the average weight of figures generated from negative prompts is significantly higher than those from positive prompts.
+- They apply a standard **p-value threshold of 0.05** (a 95% confidence interval) to determine statistical significance, ultimately finding that 16 out of their 20 prompt pairs exhibited statistically significant weight differences.
+
+**Confidence Intervals via Bootstrapping**
+
+- **Luccioni et al.** avoid traditional hypothesis tests but utilize a **bootstrap estimator** to generate 95% confidence intervals. They use this to reliably compare the gender and ethnicity distributions of their generated images (grouped into quintiles) against real-world baseline data from the U.S. Bureau of Labor Statistics.
+
+**Lack of Chi-Square, Cramér's V, and Multiple Comparison Corrections**
+
+- **Chi-Square & Cramér's V:** None of the papers document using Chi-Square tests for categorical distributions or Cramér's V to measure the association between prompts and generated identities.
+- **Corrections for Multiple Comparisons:** Even though researchers often tested multiple categories or prompt pairs simultaneously (e.g., Warren et al. testing 20 different prompt pairs), **none of the papers apply or mention multiple comparison corrections** such as the Benjamini-Hochberg False Discovery Rate (FDR) or Bonferroni corrections.
+
+**Alternative Measurements for "Effect Size"** Instead of standardized statistical effect sizes (like Cohen's _d_), several papers propose custom metrics to quantify the magnitude and severity of the observed biases:
+
+- **Mean Absolute Deviation (MAD):** Cho et al. calculate MAD to mathematically measure the distance between a model's generated demographic distribution and an unbiased, uniform distribution. A MAD of 0 indicates an unbiased distribution, while higher numbers indicate a strong skew toward a single demographic.
+- **Stereotypical Tendency Ratio ($\theta$):** Jha et al. quantify bias magnitude by calculating a ratio ($\theta$) that divides the likelihood of a model generating a known stereotype by the likelihood of it generating a random, non-stereotypical attribute.
+- **Percentage Point Swings (Max - Min):** Vandewiele et al. quantify the sensitivity of models to different prompt framing by calculating the absolute percentage point difference (Max-Min) in male/female representation when the same profession is preceded by different adjectives.
 
 ---
 
