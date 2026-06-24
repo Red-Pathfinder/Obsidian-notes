@@ -1,58 +1,19 @@
-## Objective for Today
+## Goal
 
-What am I trying to accomplish?
-
----
-
-## Work Completed
+What am I trying to do today?
 
 ---
 
-## Key Findings
+## What I Did
 
 ---
 
-## Questions Raised
+## What I Learned
 
 ---
 
-## Decisions Made
-
-Decision:
-
-Reasoning:
-
-Confidence:  
-Low / Medium / High
+## Problems / Confusions
 
 ---
 
-## Problems Encountered
-
-Issue:
-
-Possible Causes:
-
-Potential Solutions:
-
----
-
-## Next Actions
-
----
-
-## Research Lessons
-
-What did I learn today about research itself?
-
----
-
-## Evidence Produced
-
-Files created:
-
-Code written: 
-
-Figures generated:
-
-Results obtained:
+## Next Step
